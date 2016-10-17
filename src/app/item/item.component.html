@@ -1,12 +1,16 @@
-<img src="{{resultThumbnail}}">
-<div class="project-info">
-    <span class="project-name">{{project.projectName}}</span>
-    by {{project.ownerName}}
-    <span>{{project.numberOfGeometries}}&nbsp;/&nbsp;{{project.numberOfMeshes}}&nbsp;/&nbsp;{{project.numberOfSimulations}}</span>
+<div class="project-item">
+    <img class="project-thumbnail" src="{{resultThumbnail}}">
+    <div class="project-info">
+        <img class="user-avatar" src="../../assets/avatar.jpeg">
+        <span class="project-name">{{project.projectName}}</span>
+        <span class="owner-name">by {{project.ownerName}}</span><br>
+        <span>{{project.numberOfGeometries}} CAD Models&nbsp;/&nbsp;{{project.numberOfMeshes}} Meshes&nbsp;/&nbsp;{{project.numberOfSimulations}} Simulations</span>
+    </div>
+    <hr>
+    <div class="project-additional-info">
+        <span class="changed">{{project.lastModificationDate}}</span>
+        <span>{{project.numberOfViews}}/{{project.numberOfLikes}}/{{project.numberOfCopies}}</span>
+    </div>
 </div>
-<hr>
-<div class="project-additional-info">
-    <span class="changed">{{project.lastModificationDate}}</span>
-    <span>{{project.numberOfViews}}/{{project.numberOfLikes}}/{{project.numberOfCopies}}</span>
-</div>
+
 

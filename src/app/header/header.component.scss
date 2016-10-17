@@ -1,0 +1,38 @@
+header {
+    margin: 0;
+    padding: 0 80px; 
+    .logo {
+        img {
+            width: 30px;
+            height: 30px;
+        }
+        padding: 8px 0;
+    }
+    nav {
+        ul {
+            float: right;
+            display: inline;
+            li {
+                padding: 15px;
+                display: inline-block;
+            }
+        }
+        
+    }
+    .user-data {
+        display: inline;
+        padding: 10px 0 10px 90px;
+        .username {
+            display: inline-block;
+        }
+        .user-picture {
+            display: inline-block;
+            img {
+                height: 30px;
+                width: 30px;
+                border: 2px solid #e4e4e4;
+                border-radius: 15px;
+            }
+        }
+    }
+}
