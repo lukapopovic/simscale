@@ -12,6 +12,7 @@ header {
         ul {
             float: right;
             display: inline;
+            margin: 0;
             li {
                 padding: 15px;
                 display: inline-block;
@@ -21,7 +22,7 @@ header {
     }
     .user-data {
         display: inline;
-        padding: 10px 0 10px 90px;
+        padding: 8px 0;
         .username {
             display: inline-block;
         }
