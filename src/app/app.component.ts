@@ -7,5 +7,9 @@ import './rxjs-operators';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'sim works!';
+  searchKeyword: string;
+
+  onSearch(keyword) {
+  	this.searchKeyword = keyword;
+  }
 }

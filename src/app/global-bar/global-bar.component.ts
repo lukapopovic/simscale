@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'sim-global-bar',
@@ -6,11 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./global-bar.component.scss']
 })
 export class GlobalBarComponent implements OnInit {
-    pageTitle = "Public Projects";
+  @Output() keyword = new EventEmitter<string>();
+  pageTitle = "Public Projects";
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  searchProjects(keyword) {
+  	let emitKeyword = keyword || '';
+  	this.keyword.emit(emitKeyword);
+  }
 }
