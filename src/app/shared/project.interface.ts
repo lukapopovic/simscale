@@ -1,8 +1,8 @@
 export interface IProject {
-    projectName?: string,
-    creationDate?: string,
+    projectName: string,
+    creationDate: string,
     lastModificationDate?: string,
-    ownerName?: string,
+    ownerName: string,
     description?: string,
     resultIds?: string[],
     resultThumbnailUrls?: any

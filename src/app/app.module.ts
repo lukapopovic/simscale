@@ -12,20 +12,20 @@ import { DataService } from './shared/data.service';
 import { GlobalBarComponent } from './global-bar/global-bar.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    ItemListComponent,
-    ItemComponent,
-    GlobalBarComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [DataService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        FooterComponent,
+        ItemListComponent,
+        ItemComponent,
+        GlobalBarComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpModule
+    ],
+    providers: [DataService],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

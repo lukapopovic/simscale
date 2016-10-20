@@ -3,32 +3,31 @@ import { DataService, IProject } from '../shared';
 
 
 @Component({
-  selector: 'sim-item-list',
-  templateUrl: './item-list.component.html',
-  styleUrls: ['./item-list.component.scss']
+    selector: 'sim-item-list',
+    templateUrl: './item-list.component.html',
+    styleUrls: ['./item-list.component.scss']
 })
 export class ItemListComponent implements OnInit, OnChanges {
-  @Input() searchKeyword;
-  projects;
-  filteredProjects;
+    @Input() searchKeyword;
+    projects;
+    filteredProjects;
 
 
-  constructor(private dataService: DataService) { }
+    constructor(private dataService: DataService) { }
 
-  ngOnInit() {
-      this.dataService.getProjects().subscribe(projects => this.projects = this.filteredProjects = projects);
-  }
+    ngOnInit() {
+        this.dataService.getProjects().subscribe(projects => this.projects = this.filteredProjects = projects);
+    }
 
-  filterProjects(projects) {
-  	this.filteredProjects = projects.filter((project: IProject) => {
-  		return project.projectName.includes(this.searchKeyword);
-  	});
-  }
+    filterProjects(projects) {
+        this.filteredProjects = projects.filter((project: IProject) => {
+		    return project.projectName.includes(this.searchKeyword);
+  	    });
+    }
 
-  ngOnChanges(simpleChanges) {
-  	console.log(simpleChanges);
-  	if(this.projects) {
-  		this.filterProjects(this.projects);	
-  	}
-  }
+    ngOnChanges(simpleChanges) {
+        if(this.projects) {    
+  		    this.filterProjects(this.projects);	
+	    }
+    }
 }

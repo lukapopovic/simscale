@@ -28,6 +28,7 @@
                 }
             }
         }
+
         .social {
             i {
                 display: inline-block;
@@ -80,6 +81,7 @@
                 span {
                     padding-right: 10px;    
                 }
+
                 .paperli, .slideshare {
                     position: relative;
                     top: 8px;
@@ -96,13 +98,13 @@
                     width: calc(100% - 100px);
                 }
             }
+
             .sign-up {
                 background-color: #0077a9;
                 border: none;
                 padding: 5px 24px;
                 color: #ffffff;
-            }
-                        
+            }               
         }
     }
 };
